@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Portofolio | Wahyu Surya Al Fikri, S.Pd.</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="shortcut icon" href="images/logo navbar.png" type="image/png" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNavbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/logo navbar.png" alt="Logo" class="nav-logo-img" />
+          <span class="logo-text">E-Portofolio</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="visi.html">Visi Pribadi</a></li>
+          <li><a href="sem1.html">Semester 1</a></li>
+          <li><a href="sem2.html">Semester 2</a></li>
+          <li><a href="refleksi.html">Refleksi PPG</a></li>
+          <li><a href="karya.html">Karya Inovasi</a></li>
+          <li class="mobile-contact-item">
+            <a href="#kontak" class="btn-contact-mobile"> <i class="fa-regular fa-comments"></i> Mari Diskusi </a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button class="dark-mode-toggle" id="theme-toggle" aria-label="Ganti Tema"><i class="fa-regular fa-moon"></i></button>
+          <a href="#kontak" class="btn-contact desktop-only-btn">Mari Diskusi</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Buka Navigasi" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header id="beranda" class="hero">
+      <div class="hero-top reveal reveal-up">
+        <div class="hero-badge"><i class="fa-solid fa-award"></i> Calon Guru Profesional</div>
+        <h1>Wahyu <span class="highlight">Surya Al Fikri, S.Pd.</span></h1>
+        <p class="subtitle">Mahasiswa PPG Calon Guru • Bidang Studi Pendidikan Pancasila</p>
+
+        <div class="circular-stamp">
+          <img src="images/logo navbar.png" alt="Stamp Logo" class="stamp-icon" />
+          <svg viewBox="0 0 100 100" class="stamp-svg">
+            <path id="circlePath" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+            <text>
+              <textPath href="#circlePath" startOffset="0">PPG UAD • CALON GURU • PPG UAD • CALON GURU •</textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-main">
+        <!-- Float Left -->
+        <div class="float-left reveal reveal-left">
+          <div class="quick-info-block hover-anim float-anim">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="info-text">
+                <p class="info-label">LPTK</p>
+                <p class="info-value">Universitas Ahmad Dahlan (UAD)</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-school"></i></div>
+              <div class="info-text">
+                <p class="info-label">Pengalaman Lapangan</p>
+                <p class="info-value">SMAN 4 Yogyakarta</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-book-open"></i></div>
+              <div class="info-text">
+                <p class="info-label">Bidang Studi</p>
+                <p class="info-value">Pendidikan Pancasila</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Image -->
+        <div class="hero-image-wrapper reveal reveal-up" style="animation-delay: 0.2s">
+          <div class="hero-bg-shape"></div>
+          <img src="images/foto hero.png" alt="Foto Wahyu Surya Al Fikri, S.Pd." class="profile-img-full float-anim-delay-1" />
+          <div class="hero-actions">
+            <a href="visi.html" class="btn-primary">Visi Pribadi <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="btn-secondary-white">E-Portofolio PPL</a>
+          </div>
+        </div>
+
+        <!-- Float Right -->
+        <div class="float-right reveal reveal-right">
+          <div class="quote-block hover-anim float-anim-delay-2">
+            <i class="fa-solid fa-quote-left quote-icon-small"></i>
+            <p>Pendidik profesional yang mengutamakan perkembangan karakter dan kreativitas peserta didik!</p>
+          </div>
+          <div class="skills-block skills-block-float">
+            <span class="skill-tag dark skill-item-float" style="animation-delay: 0s">Refleksi Kritis</span>
+            <span class="skill-tag orange skill-item-float" style="animation-delay: 0.2s">Pedagogik</span>
+            <i class="fa-solid fa-compress arrows-icon skill-item-float" style="animation-delay: 0.4s"></i>
+            <span class="skill-tag dark skill-item-float" style="animation-delay: 0.6s">Karya Inovasi</span>
+            <span class="skill-tag orange skill-item-float" style="animation-delay: 0.8s">Kolaboratif</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-wrapper">
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>✦ E-Portofolio Seminar Pendidikan ✦ Universitas Ahmad Dahlan (UAD) ✦ PPG Calon Guru ✦ Berpihak pada Peserta Didik ✦</span>
+          <span>✦ E-Portofolio Seminar Pendidikan ✦ Universitas Ahmad Dahlan (UAD) ✦ PPG Calon Guru ✦ Berpihak pada Peserta Didik ✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="tentang-saya" class="about-section">
+      <div class="about-container">
+        <div class="about-top">
+          <div class="about-left reveal reveal-left">
+            <div class="about-image-bg"></div>
+            <img src="images/foto hero.png" alt="Wahyu Surya Al Fikri, S.Pd." class="about-profile-img float-anim-delay-1" />
+            <span class="a-tag tag-a tag-float" style="animation-delay: 0s">Calon Guru</span>
+            <span class="a-tag tag-b tag-float" style="animation-delay: 0.4s">Inovasi Pembelajaran</span>
+            <span class="a-tag tag-c tag-float" style="animation-delay: 0.8s">Wahyu Surya</span>
+            <span class="a-tag tag-d tag-float" style="animation-delay: 1.2s">Pendidikan Pancasila</span>
+            <span class="a-tag tag-e tag-float" style="animation-delay: 1.6s">Pedagogik</span>
+          </div>
+
+          <div class="about-right reveal reveal-right">
+            <div class="about-badge">
+              <div class="circles"><span class="c1"></span><span class="c2"></span></div>
+              About Me
+            </div>
+            <h2>Who is <span class="highlight">Wahyu Surya Al Fikri, S.Pd.?</span></h2>
+            <p class="about-desc">
+              Halo, saya Wahyu Surya Al Fikri, S.Pd. — seorang Mahasiswa PPG Calon Guru Bidang Studi Pendidikan Pancasila di Universitas Ahmad Dahlan (UAD). Saya memiliki ketertarikan besar dalam menciptakan pengalaman belajar yang inovatif dengan memadukan pendidikan dan
+              teknologi digital (UI/UX) untuk menghasilkan pembelajaran yang bermakna dan fungsional.
+            </p>
+            <div class="about-action">
+              <a href="#" class="btn-download-cv">
+                <span class="btn-text">Portofolio PPL</span>
+                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+              <div class="signature">Wahyu Surya Al Fikri, S.Pd.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item reveal reveal-up">
+            <h3>02</h3>
+            <p>Semester Tempuh</p>
+          </div>
+          <div class="stat-divider"><span class="c1"></span><span class="c2"></span></div>
+          <div class="stat-item reveal reveal-up" style="animation-delay: 0.1s">
+            <h3>11</h3>
+            <p>Mata Kuliah</p>
+          </div>
+          <div class="stat-divider"><span class="c1"></span><span class="c2"></span></div>
+          <div class="stat-item reveal reveal-up" style="animation-delay: 0.2s">
+            <h3>2026</h3>
+            <p>PPG Calon Guru</p>
+          </div>
+          <div class="stat-divider"><span class="c1"></span><span class="c2"></span></div>
+          <div class="stat-item reveal reveal-up" style="animation-delay: 0.3s">
+            <h3>LPTK</h3>
+            <p>Universitas Ahmad Dahlan (UAD)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATA KULIAH ===== -->
+    <section id="mata-kuliah" class="section-container">
+      <div class="section-header reveal reveal-up">
+        <div class="section-badge"><i class="fa-solid fa-layer-group"></i> Kurikulum</div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px">
+          <h2 style="margin: 0">Mata Kuliah <span class="highlight">PPG</span></h2>
+          <a href="#penutup" class="btn-primary" style="padding: 10px 25px; font-size: 0.9rem">Lihat Semua <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester 1 -->
+      <h3 class="semester-title reveal reveal-up">Semester 01</h3>
+      <div class="course-list">
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">01.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Filosofi Pendidikan &amp; Pendidikan Nilai</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">PHILOSOPHY</span></div>
+              <p class="c-desc">Landasan filosofis pendidikan nasional, pemikiran Ki Hadjar Dewantara, sistem among, serta semboyan pendidikan Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">02.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Pemahaman Peserta Didik &amp; Pembelajaran</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">PEDAGOGY</span></div>
+              <p class="c-desc">Memahami karakteristik, gaya belajar, kesiapan, minat, serta latar belakang peserta didik untuk merancang pembelajaran berdiferensiasi dan berpusat pada murid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">03.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Pembelajaran Mendalam &amp; Asesmen Dasar</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">LEARNING</span></div>
+              <p class="c-desc">Mengembangkan kemampuan merancang dan melaksanakan pembelajaran mendalam berbasis Understanding by Design serta asesmen diagnostik, formatif, dan sumatif.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">04.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Perspektif Sosiokultural Pendidikan</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">SOCIOCULTURAL</span></div>
+              <p class="c-desc">Mempelajari pengaruh status sosial, ekonomi, budaya, interaksi sosial, dan mediasi kultural (scaffolding pada ZPD) terhadap perkembangan dan proses belajar peserta didik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">05.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Pola Pikir Bertumbuh (Growth Mindset)</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">MINDSET</span></div>
+              <p class="c-desc">Membangun pola pikir berkembang dalam menghadapi tantangan belajar, melihat kesalahan sebagai sarana bertumbuh, serta menghargai proses dan usaha gigih.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">06.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Praktik Pengalaman Lapangan (PPL) Terbimbing</h3>
+            <div class="c-btn"><a href="sem1.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">TEACHING</span></div>
+              <p class="c-desc">Melaksanakan praktik mengajar terbimbing di SMAN 4 Yogyakarta, mengintegrasikan perencanaan, pelaksanaan pembelajaran Pancasila, evaluasi, dan refleksi terbimbing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Semester 2 -->
+      <h3 class="semester-title reveal reveal-up">Semester 02</h3>
+      <div class="course-list">
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">01.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Pembelajaran Sosial Emosional</h3>
+            <div class="c-btn"><a href="sem2.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">EMOTIONAL</span></div>
+              <p class="c-desc">Mengembangkan 5 kompetensi sosial emosional (kesadaran diri, manajemen diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan bertanggung jawab) dalam pembelajaran Pendidikan Pancasila.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">02.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Pembelajaran Mendalam dan Asesmen Lanjut</h3>
+            <div class="c-btn"><a href="sem2.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">ADVANCED</span></div>
+              <p class="c-desc">Memperdalam perancangan pembelajaran mendalam berbasis Understanding by Design dan Desain Universal Pembelajaran (UDL) serta asesmen berkelanjutan, remedial, dan pengayaan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">03.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Praktik Pengalaman Lapangan Mandiri</h3>
+            <div class="c-btn"><a href="sem2.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">FIELD PRACTICE</span></div>
+              <p class="c-desc">Mengimplementasikan praktik mengajar mandiri secara utuh di SMAN 4 Yogyakarta melalui siklus Lesson Study (Plan, Do, See), pengelolaan kelas, dan refleksi berbasis bukti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">04.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Projek Kepemimpinan</h3>
+            <div class="c-btn"><a href="sem2.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">LEADERSHIP</span></div>
+              <p class="c-desc">Mengembangkan jiwa kepemimpinan kolaboratif, komunikasi persuasif, inisiatif perubahan, dan implementasi projek sosial nyata yang berdampak bagi komunitas belajar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-row reveal reveal-up">
+          <div class="course-header">
+            <div class="course-left"><span class="c-num">05.</span><span class="c-line"></span></div>
+            <h3 class="c-title">Literasi Antikorupsi Berbasis Profil Pelajar Pancasila dalam Perspektif Islam</h3>
+            <div class="c-btn"><a href="sem2.html" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+          <div class="course-content-grid">
+            <div class="course-content-inner">
+              <div class="c-tags"><span class="c-tag">INTEGRITY</span></div>
+              <p class="c-desc">Menginternalisasi nilai-nilai integritas, kejujuran, keadilan, dan amanah melalui analisis studi kasus moral kontekstual sebagai fondasi guru Pendidikan Pancasila berwawasan Islam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REFLEKSI ===== -->
+    <section id="refleksi" class="section-container">
+      <div class="section-header reveal reveal-up">
+        <div class="section-badge"><i class="fa-solid fa-book"></i> Refleksi</div>
+        <h2>Refleksi <span class="highlight">Perkuliahan</span></h2>
+      </div>
+      <div class="grid-2">
+        <div class="card light-card hover-anim reveal reveal-left">
+          <div class="card-tag orange-tag">Semester 1</div>
+          <h3>Fondasi Pendidikan & Pemahaman Peserta Didik</h3>
+          <p>
+            Pada semester ini, saya belajar tentang filosofi pendidikan Ki Hajar Dewantara dan bagaimana menerapkannya dalam konteks modern. Pemahaman mendalam tentang psikologi perkembangan peserta didik menjadi fokus utama saya dalam
+            merancang modul ajar pertama.
+          </p>
+          <a href="sem1.html" class="btn-outline">Baca Selengkapnya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="card dark-card hover-anim reveal reveal-right">
+          <div class="card-tag white-tag">Semester 2</div>
+          <h3>Praktik Pengalaman Lapangan (PPL) & Inovasi</h3>
+          <p>
+            Semester 2 memberikan saya kesempatan untuk terjun langsung ke sekolah. Tantangan terbesar adalah mengelola kelas yang beragam dan mengimplementasikan pembelajaran berdiferensiasi serta asesmen yang otentik secara
+            <em>real-time</em>.
+          </p>
+          <a href="sem2.html" class="btn-outline white-outline">Baca Selengkapnya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CRITICAL REFLECTION (NEW SECTION) ===== -->
+    <section id="critical-reflection" class="section-container critical-reflection-section">
+      <div class="section-header reveal reveal-up" style="text-align: center; max-width: 800px; margin: 0 auto 60px">
+        <div class="section-badge"><i class="fa-solid fa-brain"></i> CRITICAL REFLECTION</div>
+        <h2 style="font-size: 2.8rem">INSIGHTS &amp; <span class="highlight">GROWTH</span></h2>
+        <p style="color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 10px auto 0">Refleksi mendalam atas perubahan mindset dan peningkatan kompetensi profesional.</p>
+      </div>
+
+      <div class="reflection-grid">
+        <!-- 01 -->
+        <div class="reflection-card reveal reveal-up">
+          <div class="reflection-number">01</div>
+          <div class="reflection-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="reflection-title">Pembelajaran Utama</h3>
+          <p class="reflection-desc">Mengajar bukan sekadar mentransfer pengetahuan teknis, melainkan menuntun kodrat dan potensi unik setiap peserta didik dengan pendekatan yang humanis.</p>
+          <div class="reflection-line"></div>
+        </div>
+
+        <!-- 02 -->
+        <div class="reflection-card reveal reveal-up" style="animation-delay: 0.1s">
+          <div class="reflection-number">02</div>
+          <div class="reflection-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3 class="reflection-title">Perubahan Mindset</h3>
+          <p class="reflection-desc">Berubah dari pendekatan yang berpusat pada guru (teacher-centered) menjadi pembelajaran diferensiasi yang adaptif dan inklusif.</p>
+          <div class="reflection-line"></div>
+        </div>
+
+        <!-- 03 -->
+        <div class="reflection-card reveal reveal-up" style="animation-delay: 0.2s">
+          <div class="reflection-number">03</div>
+          <div class="reflection-icon"><i class="fa-solid fa-compass"></i></div>
+          <h3 class="reflection-title">Penemuan Diri</h3>
+          <p class="reflection-desc">Menemukan pentingnya empati sosial-emosional dan integrasi teknologi yang tepat guna dalam menciptakan kelas yang interaktif.</p>
+          <div class="reflection-line"></div>
+        </div>
+
+        <!-- 04 -->
+        <div class="reflection-card reveal reveal-up" style="animation-delay: 0.3s">
+          <div class="reflection-number">04</div>
+          <div class="reflection-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3 class="reflection-title">Rencana Aksi</h3>
+          <p class="reflection-desc">Berkomitmen menjadi pendidik pembelajar sepanjang hayat (lifelong learner) yang terus berinovasi dan berkontribusi bagi dunia pendidikan.</p>
+          <div class="reflection-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KARYA INOVASI ===== -->
+    <section id="karya" class="section-container">
+      <div class="section-header reveal reveal-up">
+        <div class="section-badge"><i class="fa-solid fa-lightbulb"></i> Lembar Kerja 4 (LK 4)</div>
+        <h2>Karya <span class="highlight">Inovasi</span></h2>
+        <p style="color: var(--text-gray); font-size: 1.05rem; margin-top: 8px">
+          Desain Karya Inovatif: <strong>CIVIC CLASH</strong> — Kuis Digital Interaktif Adaptasi <em>"Family 100"</em> untuk Materi Perubahan UUD NRI Tahun 1945 di Kelas XI F3 SMAN 4 Yogyakarta.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="card light-card hover-anim reveal reveal-up">
+          <div class="card-img-placeholder" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05)); color: var(--accent); font-size: 2.4rem">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <span class="card-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-dark); margin-top: 15px">Kuis Digital Interaktif</span>
+          <h4>CIVIC CLASH</h4>
+          <p>Adaptasi kuis Family 100 dengan 5 level kartu poin, papan skor real-time dua tim, dan efek suara dinamis.</p>
+          <a href="karya.html#gagasan" class="btn-outline">Lihat Konsep <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card light-card hover-anim reveal reveal-up" style="animation-delay: 0.1s">
+          <div class="card-img-placeholder" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05)); color: var(--accent); font-size: 2.4rem">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <span class="card-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-dark); margin-top: 15px">Materi Konstitusi</span>
+          <h4>15 Soal UUD NRI 1945</h4>
+          <p>Memuat 15 soal esensial seputar latar belakang reformasi, Pasal 37, kesepakatan dasar MPR, dan amandemen 1–4.</p>
+          <a href="karya.html#pos-sirkuit" class="btn-outline">Lihat Fitur Game <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card light-card hover-anim reveal reveal-up" style="animation-delay: 0.2s">
+          <div class="card-img-placeholder" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05)); color: var(--accent); font-size: 2.4rem">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <span class="card-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-dark); margin-top: 15px">Evaluasi Terpadu</span>
+          <h4>TGT, TaRL &amp; KKTP 75</h4>
+          <p>Turnamen antartim dengan Emotional Check-in, observasi proses, dan tes tertulis mandiri berstandar KKTP 75.</p>
+          <a href="karya.html#evaluasi" class="btn-outline">Lihat Evaluasi <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px" class="reveal reveal-up">
+        <a href="karya.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px">
+          <i class="fa-solid fa-file-pdf"></i> Buka Dokumen & Rincian Lengkap Karya Inovasi (LK 4) <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <div id="kontak"></div>
+    <footer id="penutup">
+      <div class="footer-content">
+        <h2>LET'S CREATE SOMETHING EXTRAORDINARY</h2>
+        <a href="#beranda" class="btn-primary" style="display: inline-flex">Kembali ke Atas <i class="fa-solid fa-arrow-up"></i></a>
+        <div class="social-links">
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2026 Wahyu Surya Al Fikri, S.Pd. Universitas Ahmad Dahlan (UAD).</p>
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      // ---------- DARK MODE ----------
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeIcon = themeToggleBtn.querySelector("i");
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("fa-moon", "fa-sun");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("fa-sun", "fa-moon");
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      // ---------- SCROLL REVEAL (Intersection Observer) ----------
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px -30px 0px",
+        },
+      );
+
+      revealElements.forEach((el) => revealObserver.observe(el));
+
+      // ---------- PARALLAX FLOATING (opsional) ----------
+      // Efek tambahan: elemen dengan class .float-anim akan bergerak halus
+      // Sudah diatur di CSS via keyframes.
+    </script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

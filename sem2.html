@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refleksi Semester 2 | Wahyu Surya Al Fikri, S.Pd.</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/sem2.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="shortcut icon" href="images/logo navbar.png" type="image/png" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNavbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/logo navbar.png" alt="Logo" class="nav-logo-img" />
+          <span class="logo-text">E-Portofolio</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="visi.html">Visi Pribadi</a></li>
+          <li><a href="sem1.html">Semester 1</a></li>
+          <li><a href="sem2.html" class="active">Semester 2</a></li>
+          <li><a href="refleksi.html">Refleksi PPG</a></li>
+          <li><a href="karya.html">Karya Inovasi</a></li>
+          <li class="mobile-contact-item">
+            <a href="#kontak" class="btn-contact-mobile">
+              <i class="fa-regular fa-comments"></i> Mari Diskusi
+            </a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button class="dark-mode-toggle" id="theme-toggle" aria-label="Ganti Tema"><i class="fa-regular fa-moon"></i></button>
+          <a href="#kontak" class="btn-contact desktop-only-btn">Mari Diskusi</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Buka Navigasi" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero-sem2">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal reveal-up">
+        <div class="hero-badge"><i class="fa-solid fa-book-open"></i> Refleksi Pembelajaran PPG Calon Guru</div>
+        <h1>Semester <span class="highlight">02</span></h1>
+        <p class="hero-sub">Ruang dokumentasi dan refleksi perjalanan belajar tingkat lanjut selama Semester 2 sebagai calon guru Pendidikan Pancasila.</p>
+        <div class="hero-desc">
+          <p>
+            Halaman ini menyajikan refleksi komprehensif Lembar Kerja 2 (LK 2) pada lima mata kuliah Semester 2, mengintegrasikan alur 4C (<em>Connection, Challenge, Concept, Change</em>) serta penjelasan kritis mengenai alasan pemilihan artefak pembelajaran sebagai bukti pertumbuhan profesional calon guru Pendidikan Pancasila.
+          </p>
+          <div class="hero-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <span>Praktik mandiri dan pembelajaran sosial emosional mematangkan kompetensi pendidik untuk menuntun generasi masa depan yang tangguh dan berkarakter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shapes">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+      </div>
+    </header>
+
+    <!-- ===== PILIHAN MATA KULIAH ===== -->
+    <section id="daftar-mk" class="section-container">
+      <div class="section-header reveal reveal-up">
+        <div class="section-badge"><i class="fa-solid fa-layer-group"></i> Mata Kuliah Semester 2</div>
+        <h2>Daftar <span class="highlight">Mata Kuliah</span></h2>
+        <p style="color: var(--text-gray); max-width: 650px; margin-top: 10px">Pilih salah satu mata kuliah di bawah untuk membuka refleksi pengalaman belajar (LK 2) dan analisis artefak pembelajarannya.</p>
+      </div>
+
+      <div class="mk-grid" id="mkGrid">
+        <!-- Card MK 01 -->
+        <div class="mk-card hover-anim reveal reveal-up active" data-target="mk01">
+          <div class="mk-icon"><i class="fa-solid fa-heart"></i></div>
+          <span class="mk-code">01</span>
+          <h3 class="mk-name">Pembelajaran Sosial Emosional</h3>
+          <p class="mk-desc">Pengembangan 5 kompetensi sosial emosional (kesadaran diri, pengelolaan diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan bertanggung jawab) dalam pembelajaran Pendidikan Pancasila.</p>
+          <span class="mk-status">Sudah Direfleksikan</span>
+        </div>
+        <!-- Card MK 02 -->
+        <div class="mk-card hover-anim reveal reveal-up" data-target="mk02" style="animation-delay: 0.1s">
+          <div class="mk-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <span class="mk-code">02</span>
+          <h3 class="mk-name">Pembelajaran Mendalam dan Asesmen Lanjut</h3>
+          <p class="mk-desc">Memperdalam perancangan pembelajaran mendalam berbasis Understanding by Design dan Desain Universal Pembelajaran (UDL) serta asesmen berkelanjutan, remedial, dan pengayaan.</p>
+          <span class="mk-status">Sudah Direfleksikan</span>
+        </div>
+        <!-- Card MK 03 -->
+        <div class="mk-card hover-anim reveal reveal-up" data-target="mk03" style="animation-delay: 0.2s">
+          <div class="mk-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <span class="mk-code">03</span>
+          <h3 class="mk-name">Praktik Pengalaman Lapangan Mandiri</h3>
+          <p class="mk-desc">Mengimplementasikan praktik mengajar mandiri secara utuh di SMAN 4 Yogyakarta melalui siklus Lesson Study (Plan, Do, See), pengelolaan kelas, dan refleksi berbasis bukti.</p>
+          <span class="mk-status">Sudah Direfleksikan</span>
+        </div>
+        <!-- Card MK 04 -->
+        <div class="mk-card hover-anim reveal reveal-up" data-target="mk04" style="animation-delay: 0.3s">
+          <div class="mk-icon"><i class="fa-solid fa-flag"></i></div>
+          <span class="mk-code">04</span>
+          <h3 class="mk-name">Projek Kepemimpinan</h3>
+          <p class="mk-desc">Mengembangkan jiwa kepemimpinan kolaboratif, komunikasi persuasif, inisiatif perubahan, dan implementasi projek sosial nyata yang berdampak bagi komunitas belajar.</p>
+          <span class="mk-status">Sudah Direfleksikan</span>
+        </div>
+        <!-- Card MK 05 -->
+        <div class="mk-card hover-anim reveal reveal-up" data-target="mk05" style="animation-delay: 0.4s">
+          <div class="mk-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <span class="mk-code">05</span>
+          <h3 class="mk-name">Literasi Antikorupsi Berbasis Profil Pelajar Pancasila dalam Perspektif Islam</h3>
+          <p class="mk-desc">Menginternalisasi nilai-nilai integritas, kejujuran, keadilan, dan amanah melalui analisis studi kasus moral kontekstual sebagai fondasi guru Pendidikan Pancasila berwawasan Islam.</p>
+          <span class="mk-status">Sudah Direfleksikan</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PANEL REFLEKSI ===== -->
+    <section id="refleksi" class="section-container panel-section">
+      <!-- ============================================================ -->
+      <!-- MK 01: Pembelajaran Sosial Emosional -->
+      <!-- ============================================================ -->
+      <div class="reflection-panel active" id="panel-mk01">
+        <div class="panel-header reveal reveal-up">
+          <div class="panel-meta">
+            <span class="panel-code">Mata Kuliah 01</span>
+            <span class="panel-status done"><i class="fa-solid fa-check"></i> Sudah Direfleksikan</span>
+          </div>
+          <h2>Pembelajaran Sosial Emosional</h2>
+          <p class="panel-desc">Pengembangan 5 kompetensi sosial emosional (kesadaran diri, pengelolaan diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan bertanggung jawab) dalam pembelajaran Pendidikan Pancasila.</p>
+        </div>
+
+        <!-- Dokumen Pendukung (LK 2) -->
+        <div class="panel-documents reveal reveal-up">
+          <h4><i class="fa-solid fa-paperclip"></i> Dokumen Resmi Lembar Kerja 2 (LK 2)</h4>
+          <div class="doc-list">
+            <div class="doc-item-wrapper">
+              <div class="doc-header">
+                <div class="doc-item" style="cursor: default">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Lembar Kerja 2 - Pembelajaran Sosial Emosional (PSE)</span>
+                </div>
+                <a href="document/Sem2/Seminar Refleksi_Pembelajaran_Sosial_Emosional_Wahyu Surya Al Fikri (1).pdf" target="_blank" class="doc-open-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Dokumen di Tab Baru
+                </a>
+              </div>
+              <div class="pdf-preview">
+                <iframe src="document/Sem2/Seminar Refleksi_Pembelajaran_Sosial_Emosional_Wahyu Surya Al Fikri (1).pdf" width="100%" height="520px" style="border: none; border-radius: 12px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reflection Flow (4C: Connection, Challenge, Concept, Change) -->
+        <div class="reflection-flow">
+          <!-- 01 CONNECTION -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">01</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-link rf-icon"></i> CONNECTION</h4>
+              <h5>Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</h5>
+              <p class="rf-answer"><strong>Topik 1 Pembelajaran Sosial Emosional Berdasarkan Kerangka CASEL:</strong> Materi ini berkaitan erat dengan peran saya sebagai calon guru Pendidikan Pancasila karena pembelajaran tidak hanya berfokus pada capaian kognitif, melainkan juga pada pembentukan karakter, empati, dan kecerdasan emosional murid.</p>
+              <p class="rf-answer"><strong>Topik 2 Experiential Learning dalam PSE:</strong> Penerapan siklus belajar Kolb (pengalaman konkret, observasi reflektif, konseptualisasi abstrak, dan eksperimentasi aktif) memungkinkan murid merasakan secara langsung bagaimana mengelola emosi dan berempati saat mendiskusikan perbedaan pendapat.</p>
+              <p class="rf-answer"><strong>Topik 3 Iklim Belajar & Well-being:</strong> Membimbing guru menciptakan ekosistem ruang kelas yang aman secara psikologis, di mana setiap anak merasa didengar, dihargai, dan nyaman dalam berekspresi.</p>
+            </div>
+          </div>
+
+          <!-- 02 CHALLENGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">02</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-triangle-exclamation rf-icon"></i> CHALLENGE</h4>
+              <h5>Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</h5>
+              <p class="rf-answer">Sebelumnya, saya cenderung mengukur keberhasilan pembelajaran dari ketercapaian materi kurikulum dan hasil nilai ujian siswa semata.</p>
+              <p class="rf-answer">Melalui mata kuliah PSE, saya menyadari bahwa suasana batin dan kesiapan emosional siswa sangat menentukan kualitas belajar. Jika siswa merasa cemas, tertekan, atau diabaikan, fungsi kognitif mereka tidak akan bekerja maksimal. Guru wajib mengintegrasikan aspek sosial emosional ke dalam seluruh tahapan belajar.</p>
+            </div>
+          </div>
+
+          <!-- 03 CONCEPT -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">03</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-lightbulb rf-icon"></i> CONCEPT</h4>
+              <h5>Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</h5>
+              <p class="rf-answer">Lima kompetensi inti <strong>CASEL</strong>: <em>Self-awareness</em> (kesadaran diri), <em>Self-management</em> (pengelolaan diri), <em>Social awareness</em> (kesadaran sosial/empati), <em>Relationship skills</em> (keterampilan berelasi), dan <em>Responsible decision-making</em> (pengambilan keputusan bertanggung jawab).</p>
+              <p class="rf-answer">Integrasi <strong>Experiential Learning</strong> dan teknik mindfulness sederhana (seperti metode STOP) untuk menenangkan fokus belajar peserta didik.</p>
+            </div>
+          </div>
+
+          <!-- 04 CHANGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">04</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-arrow-right-arrow-left rf-icon"></i> CHANGE</h4>
+              <h5>Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</h5>
+              <p class="rf-answer">Mengintegrasikan kegiatan PSE secara konsisten di setiap pertemuan Pendidikan Pancasila, diawali dengan 'check-in' emosi di awal kelas dan refleksi empati di akhir sesi.</p>
+              <p class="rf-answer">Membimbing siswa dalam kerja kelompok tidak hanya dari segi pembagian tugas materi, melainkan juga melatih mereka berkomunikasi asertif, menghargai perspektif kawan, dan menyelesaikan perbedaan secara damai.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artefak Pembelajaran -->
+        <div class="artifacts-grid reveal reveal-up">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Artefak Pembelajaran &amp; Analisis Pemilihan</h3>
+          <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 0.95rem">
+            Berikut adalah artefak pembelajaran yang diidentifikasi dan penjelasan kritis mengenai alasan pemilihan artefak sebagai bukti pendukung refleksi belajar:
+          </p>
+          <div class="artifact-cards">
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">01</span>
+              <div class="artifact-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+              <h4>Modul Integrasi PSE & Experiential</h4>
+              <p>Rancangan pembelajaran Pendidikan Pancasila yang memadukan siklus Kolb dengan 5 kompetensi sosial emosional.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">02</span>
+              <div class="artifact-icon"><i class="fa-solid fa-spa"></i></div>
+              <h4>Panduan Praktik Mindfulness STOP</h4>
+              <p>Prosedur hening sejenak untuk melatih kesadaran diri dan fokus siswa sebelum memulai diskusi etika.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">03</span>
+              <div class="artifact-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+              <h4>Rubrik Penilaian Sikap Sosial</h4>
+              <p>Instrumen asesmen autentik untuk memantau kerja sama, empati, dan pengambilan keputusan bertanggung jawab.</p>
+            </div>
+          </div>
+
+          <div class="artifact-meaning reveal reveal-up" style="margin-top: 30px">
+            <h4><i class="fa-solid fa-circle-question"></i> Mengapa Artefak Tersebut yang Saya Pilih?</h4>
+            <p>Saya memilih artefak ini karena secara konkret mengintegrasikan konsep Experiential Learning dengan Pembelajaran Sosial Emosional (PSE). Artefak ini membuktikan kemampuan saya merancang skenario pembelajaran yang melatih empati dan tanggung jawab sosial secara simultan.</p>
+
+            <h4 style="margin-top: 25px;"><i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i> Bagian Mana dari Artefak Ini yang Mendukung Hasil Refleksi?</h4>
+            <p>Bagian yang paling mendukung refleksi adalah tahapan 'Reflective Observation' dalam modul ajar, di mana siswa diajak merefleksikan bagaimana perasaan mereka saat berdiskusi dan bagaimana menghargai pendapat rekan yang berbeda pandangan.</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://drive.google.com/file/d/1Jb-Qp6QyVkODcMzLS05Z8RpRFa81V7AF/view?usp=sharing" target="_blank" class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; text-decoration: none;">
+                <i class="fa-brands fa-google-drive" style="color: #4285F4; font-size: 1.1rem;"></i> Lihat Artefak di Google Drive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- MK 02: Pembelajaran Mendalam dan Asesmen Lanjut -->
+      <!-- ============================================================ -->
+      <div class="reflection-panel" id="panel-mk02">
+        <div class="panel-header reveal reveal-up">
+          <div class="panel-meta">
+            <span class="panel-code">Mata Kuliah 02</span>
+            <span class="panel-status done"><i class="fa-solid fa-check"></i> Sudah Direfleksikan</span>
+          </div>
+          <h2>Pembelajaran Mendalam dan Asesmen Lanjut</h2>
+          <p class="panel-desc">Memperdalam perancangan pembelajaran mendalam berbasis Understanding by Design dan Desain Universal Pembelajaran (UDL) serta asesmen berkelanjutan, remedial, dan pengayaan.</p>
+        </div>
+
+        <!-- Dokumen Pendukung (LK 2) -->
+        <div class="panel-documents reveal reveal-up">
+          <h4><i class="fa-solid fa-paperclip"></i> Dokumen Resmi Lembar Kerja 2 (LK 2)</h4>
+          <div class="doc-list">
+            <div class="doc-item-wrapper">
+              <div class="doc-header">
+                <div class="doc-item" style="cursor: default">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Lembar Kerja 2 - Pembelajaran Mendalam & Asesmen Lanjut</span>
+                </div>
+                <a href="document/Sem2/Seminar Refleksi_Pembelajaran Mendalam Asesmen Lanjut_Wahyu Surya Al Fikri (1).pdf" target="_blank" class="doc-open-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Dokumen di Tab Baru
+                </a>
+              </div>
+              <div class="pdf-preview">
+                <iframe src="document/Sem2/Seminar Refleksi_Pembelajaran Mendalam Asesmen Lanjut_Wahyu Surya Al Fikri (1).pdf" width="100%" height="520px" style="border: none; border-radius: 12px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reflection Flow (4C: Connection, Challenge, Concept, Change) -->
+        <div class="reflection-flow">
+          <!-- 01 CONNECTION -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">01</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-link rf-icon"></i> CONNECTION</h4>
+              <h5>Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</h5>
+              <p class="rf-answer"><strong>Topik 1 Asesmen Awal Pembelajaran Mendalam:</strong> Guru perlu melakukan asesmen diagnostik kognitif dan non-kognitif yang terstruktur untuk mengetahui modalitas dan kesiapan awal murid sebelum masuk ke materi analisis konstitusi.</p>
+              <p class="rf-answer"><strong>Topik 2 Desain Universal untuk Pembelajaran (UDL):</strong> Menerapkan tiga prinsip Universal Design for Learning guna menyediakan berbagai cara representasi materi, ekspresi pemahaman, serta keterlibatan aktif peserta didik.</p>
+              <p class="rf-answer"><strong>Topik 3 Asesmen Berkelanjutan, Remedial, & Pengayaan:</strong> Mengelola siklus asesmen formatif yang adil untuk memberikan pendampingan terarah bagi siswa yang belum mencapai tujuan serta tantangan lanjut bagi yang sudah melampauinya.</p>
+            </div>
+          </div>
+
+          <!-- 02 CHALLENGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">02</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-triangle-exclamation rf-icon"></i> CHALLENGE</h4>
+              <h5>Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</h5>
+              <p class="rf-answer">Sebelumnya, penilaian sering kali dianggap sekadar tugas pemberian nilai di akhir semester menggunakan tes tertulis standar yang seragam untuk semua siswa tanpa alternatif representasi.</p>
+              <p class="rf-answer">Mata kuliah ini mempertegas bahwa kurikulumlah yang harus fleksibel memfasilitasi kebutuhan murid melalui prinsip Universal Design for Learning (UDL), bukan siswa yang dipaksa tunduk pada satu format ujian yang kaku.</p>
+            </div>
+          </div>
+
+          <!-- 03 CONCEPT -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">03</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-lightbulb rf-icon"></i> CONCEPT</h4>
+              <h5>Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</h5>
+              <p class="rf-answer">Prinsip <strong>Universal Design for Learning (UDL)</strong>: (1) <em>Multiple Means of Engagement</em>, (2) <em>Multiple Means of Representation</em>, (3) <em>Multiple Means of Action and Expression</em>.</p>
+              <p class="rf-answer">Penyusunan <strong>Asesmen Awal Diagnostik Komprehensif</strong>, rubrik performa berbasis bukti, serta strategi diferensiasi remedial dan pengayaan yang humanis.</p>
+            </div>
+          </div>
+
+          <!-- 04 CHANGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">04</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-arrow-right-arrow-left rf-icon"></i> CHANGE</h4>
+              <h5>Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</h5>
+              <p class="rf-answer">Membiasakan diri melaksanakan asesmen awal diagnostik pada materi Pendidikan Pancasila sebelum menyusun rencana ajar.</p>
+              <p class="rf-answer">Menyediakan ragam opsi bagi siswa untuk mendemonstrasikan pemahaman mereka: esai analisis, infografis digital, podcast audio, atau simulasi interaktif.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artefak Pembelajaran -->
+        <div class="artifacts-grid reveal reveal-up">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Artefak Pembelajaran &amp; Analisis Pemilihan</h3>
+          <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 0.95rem">
+            Berikut adalah artefak pembelajaran yang diidentifikasi dan penjelasan kritis mengenai alasan pemilihan artefak sebagai bukti pendukung refleksi belajar:
+          </p>
+          <div class="artifact-cards">
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">01</span>
+              <div class="artifact-icon"><i class="fa-solid fa-list-check"></i></div>
+              <h4>Asesmen Awal Diagnostik Pancasila</h4>
+              <p>Instrumen pemetaan awal kesiapan materi UUD NRI 1945 untuk menentukan titik tolak pembelajaran berdiferensiasi.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">02</span>
+              <div class="artifact-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h4>Perangkat Ajar Berbasis UDL</h4>
+              <p>Modul ajar yang menyediakan multi-representasi media (video, komik, teks) dan multi-ekspresi tugas siswa.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">03</span>
+              <div class="artifact-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+              <h4>Program Remedial & Pengayaan</h4>
+              <p>Desain intervensi diferensiasi terarah berdasarkan hasil evaluasi formatif berkelanjutan.</p>
+            </div>
+          </div>
+
+          <div class="artifact-meaning reveal reveal-up" style="margin-top: 30px">
+            <h4><i class="fa-solid fa-circle-question"></i> Mengapa Artefak Tersebut yang Saya Pilih?</h4>
+            <p>Saya memilih artefak 'Asesmen Awal (Diagnostik) Pendidikan Pancasila' karena menunjukkan penerapan nyata asesmen awal untuk mengenali pengetahuan, kesiapan, minat, dan gaya belajar murid sebelum memulai materi esensial di kelas XI.</p>
+
+            <h4 style="margin-top: 25px;"><i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i> Bagian Mana dari Artefak Ini yang Mendukung Hasil Refleksi?</h4>
+            <p>Bagian artefak yang paling mendukung refleksi adalah pembagian asesmen kognitif dan non-kognitif serta pemanfaatan hasilnya dalam memodifikasi tingkat kesulitan instruksional bagi peserta didik.</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://drive.google.com/file/d/1Mx9GA5QbX2Fc2nJj1DkuWrcfDtrybeO5/view?usp=sharing" target="_blank" class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; text-decoration: none;">
+                <i class="fa-brands fa-google-drive" style="color: #4285F4; font-size: 1.1rem;"></i> Lihat Artefak di Google Drive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- MK 03: Praktik Pengalaman Lapangan Mandiri -->
+      <!-- ============================================================ -->
+      <div class="reflection-panel" id="panel-mk03">
+        <div class="panel-header reveal reveal-up">
+          <div class="panel-meta">
+            <span class="panel-code">Mata Kuliah 03</span>
+            <span class="panel-status done"><i class="fa-solid fa-check"></i> Sudah Direfleksikan</span>
+          </div>
+          <h2>Praktik Pengalaman Lapangan Mandiri</h2>
+          <p class="panel-desc">Mengimplementasikan praktik mengajar mandiri secara utuh di SMAN 4 Yogyakarta melalui siklus Lesson Study (Plan, Do, See), pengelolaan kelas, dan refleksi berbasis bukti.</p>
+        </div>
+
+        <!-- Dokumen Pendukung (LK 2) -->
+        <div class="panel-documents reveal reveal-up">
+          <h4><i class="fa-solid fa-paperclip"></i> Dokumen Resmi Lembar Kerja 2 (LK 2)</h4>
+          <div class="doc-list">
+            <div class="doc-item-wrapper">
+              <div class="doc-header">
+                <div class="doc-item" style="cursor: default">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Lembar Kerja 2 - PPL Mandiri SMAN 4 Yogyakarta</span>
+                </div>
+                <a href="document/Sem2/Seminar Refleksi_SMA Negeri 4 Yogyakarta_Praktik Pengalaman Lapangan (PPL) Mandiri_Wahyu Surya Al Fikri (1).pdf" target="_blank" class="doc-open-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Dokumen di Tab Baru
+                </a>
+              </div>
+              <div class="pdf-preview">
+                <iframe src="document/Sem2/Seminar Refleksi_SMA Negeri 4 Yogyakarta_Praktik Pengalaman Lapangan (PPL) Mandiri_Wahyu Surya Al Fikri (1).pdf" width="100%" height="520px" style="border: none; border-radius: 12px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reflection Flow (4C: Connection, Challenge, Concept, Change) -->
+        <div class="reflection-flow">
+          <!-- 01 CONNECTION -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">01</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-link rf-icon"></i> CONNECTION</h4>
+              <h5>Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</h5>
+              <p class="rf-answer">PPL Mandiri memberikan pengalaman langsung memegang tanggung jawab penuh seorang guru profesional di SMAN 4 Yogyakarta, mulai dari membedah kurikulum, menyusun modul ajar utuh, mengelola dinamika kelas, hingga mengevaluasi capaian belajar.</p>
+              <p class="rf-answer">Menghubungkan seluruh teori pedagogik yang dipelajari selama perkuliahan dengan realitas lapangan nyata di kelas XI Pendidikan Pancasila, termasuk bagaimana membangun komunikasi positif dan memotivasi belajar siswa.</p>
+            </div>
+          </div>
+
+          <!-- 02 CHALLENGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">02</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-triangle-exclamation rf-icon"></i> CHALLENGE</h4>
+              <h5>Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</h5>
+              <p class="rf-answer">Menghadapi tantangan nyata di lapangan seperti keterbatasan fokus siswa di jam pelajaran siang, heterogenitas kecepatan belajar antar-siswa, serta keharusan mengelola kelas yang bersemangat namun tetap tertib.</p>
+              <p class="rf-answer">Menyadari bahwa mengajar mandiri menuntut guru untuk fleksibel, tanggap terhadap respon spontan siswa, serta mampu berinovasi menghadirkan media pembelajaran interaktif yang memecah kejenuhan (seperti permainan Civic Clash).</p>
+            </div>
+          </div>
+
+          <!-- 03 CONCEPT -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">03</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-lightbulb rf-icon"></i> CONCEPT</h4>
+              <h5>Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</h5>
+              <p class="rf-answer">Penerapan siklus <strong>Lesson Study</strong> berbasis bukti: <em>Plan</em> (perencanaan terpadu), <em>Do</em> (pelaksanaan pembelajaran otentik), dan <em>See</em> (observasi dan refleksi mendalam bersama guru pamong dan rekan sejawat).</p>
+              <p class="rf-answer">Manajemen kelas mandiri yang demokratis, pembelajaran berdiferensiasi, serta asesmen autentik berkelanjutan.</p>
+            </div>
+          </div>
+
+          <!-- 04 CHANGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">04</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-arrow-right-arrow-left rf-icon"></i> CHANGE</h4>
+              <h5>Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</h5>
+              <p class="rf-answer">Membiasakan diri memulai perencanaan mengajar dengan menelaah konteks sekolah dan kebutuhan riil siswa, bukan semata berpatokan pada daftar bab buku teks.</p>
+              <p class="rf-answer">Konsisten menggunakan media pembelajaran yang interaktif dan berbasis gamifikasi edukatif untuk menjaga keterlibatan aktif seluruh siswa di kelas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artefak Pembelajaran -->
+        <div class="artifacts-grid reveal reveal-up">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Artefak Pembelajaran &amp; Analisis Pemilihan</h3>
+          <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 0.95rem">
+            Berikut adalah artefak pembelajaran yang diidentifikasi dan penjelasan kritis mengenai alasan pemilihan artefak sebagai bukti pendukung refleksi belajar:
+          </p>
+          <div class="artifact-cards">
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">01</span>
+              <div class="artifact-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <h4>LK 3 Refleksi Praktik Mengajar</h4>
+              <p>Dokumen evaluasi mandiri hasil pelaksanaan siklus pembelajaran mandiri di kelas XI SMAN 4 Yogyakarta.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">02</span>
+              <div class="artifact-icon"><i class="fa-solid fa-gamepad"></i></div>
+              <h4>Media Interaktif 'Civic Clash'</h4>
+              <p>Inovasi media gamifikasi adaptasi Family 100 untuk materi Perubahan UUD NRI 1945.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">03</span>
+              <div class="artifact-icon"><i class="fa-solid fa-user-check"></i></div>
+              <h4>Lembar Umpan Balik Guru Pamong</h4>
+              <p>Catatan supervisi objektif dan rekomendasi tindak lanjut pengembangan kompetensi mengajar mandiri.</p>
+            </div>
+          </div>
+
+          <div class="artifact-meaning reveal reveal-up" style="margin-top: 30px">
+            <h4><i class="fa-solid fa-circle-question"></i> Mengapa Artefak Tersebut yang Saya Pilih?</h4>
+            <p>Saya memilih LK 3 Refleksi Praktik Mengajar karena artefak ini membuktikan penerapan rancangan pembelajaran dalam praktik nyata secara utuh, penerimaan umpan balik dari guru pamong dan teman sejawat, serta penentuan tindak lanjut perbaikan kualitas pembelajaran.</p>
+
+            <h4 style="margin-top: 25px;"><i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i> Bagian Mana dari Artefak Ini yang Mendukung Hasil Refleksi?</h4>
+            <p>Bagian artefak yang paling memperkuat hasil refleksi adalah catatan observasi keterlibatan peserta didik dan evaluasi efektivitas media pembelajaran interaktif dalam meningkatkan keaktifan diskusi kelas.</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://drive.google.com/file/d/1OMWsxRW9iuWfp9iY4LEfJ7NKDz5ZIw8L/view?usp=sharing" target="_blank" class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; text-decoration: none;">
+                <i class="fa-brands fa-google-drive" style="color: #4285F4; font-size: 1.1rem;"></i> Lihat Artefak di Google Drive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- MK 04: Projek Kepemimpinan -->
+      <!-- ============================================================ -->
+      <div class="reflection-panel" id="panel-mk04">
+        <div class="panel-header reveal reveal-up">
+          <div class="panel-meta">
+            <span class="panel-code">Mata Kuliah 04</span>
+            <span class="panel-status done"><i class="fa-solid fa-check"></i> Sudah Direfleksikan</span>
+          </div>
+          <h2>Projek Kepemimpinan</h2>
+          <p class="panel-desc">Mengembangkan jiwa kepemimpinan kolaboratif, komunikasi persuasif, inisiatif perubahan, dan implementasi projek sosial nyata yang berdampak bagi komunitas belajar.</p>
+        </div>
+
+        <!-- Dokumen Pendukung (LK 2) -->
+        <div class="panel-documents reveal reveal-up">
+          <h4><i class="fa-solid fa-paperclip"></i> Dokumen Resmi Lembar Kerja 2 (LK 2)</h4>
+          <div class="doc-list">
+            <div class="doc-item-wrapper">
+              <div class="doc-header">
+                <div class="doc-item" style="cursor: default">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Lembar Kerja 2 - Projek Kepemimpinan Komunitas B3</span>
+                </div>
+                <a href="document/Sem2/Seminar Refleksi_Projek Kepemimpinan B3_Wahyu Surya Al Fikri (1).pdf" target="_blank" class="doc-open-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Dokumen di Tab Baru
+                </a>
+              </div>
+              <div class="pdf-preview">
+                <iframe src="document/Sem2/Seminar Refleksi_Projek Kepemimpinan B3_Wahyu Surya Al Fikri (1).pdf" width="100%" height="520px" style="border: none; border-radius: 12px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reflection Flow (4C: Connection, Challenge, Concept, Change) -->
+        <div class="reflection-flow">
+          <!-- 01 CONNECTION -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">01</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-link rf-icon"></i> CONNECTION</h4>
+              <h5>Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</h5>
+              <p class="rf-answer">Materi Projek Kepemimpinan membekali calon guru dengan kompetensi <em>teacher leadership</em>: kemampuan menggerakkan rekan, menginisiasi pemecahan masalah bersama, dan membangun ekosistem kolaboratif.</p>
+              <p class="rf-answer">Menghubungkan empat tahapan projek kepemimpinan: perumusan visi yang bermakna, perencanaan berbasis sumber daya lokal, eksekusi lapangan kolaboratif, serta evaluasi dampak dan keberlanjutan program.</p>
+            </div>
+          </div>
+
+          <!-- 02 CHALLENGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">02</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-triangle-exclamation rf-icon"></i> CHALLENGE</h4>
+              <h5>Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</h5>
+              <p class="rf-answer">Sebelumnya, kepemimpinan sering dipersepsikan hanya sebatas membagi tugas struktural, memimpin rapat, dan memastikan kegiatan selesai sesuai jadwal.</p>
+              <p class="rf-answer">Melalui pelaksanaan projek nyata di lapangan, saya menyadari bahwa kepemimpinan sejati menuntut kemampuan mendengarkan aspirasi rekan tim, mengelola konflik secara bijaksana, dan memastikan program memberikan manfaat berkelanjutan bagi komunitas sasaran.</p>
+            </div>
+          </div>
+
+          <!-- 03 CONCEPT -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">03</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-lightbulb rf-icon"></i> CONCEPT</h4>
+              <h5>Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</h5>
+              <p class="rf-answer">Konsep <strong>Kepemimpinan Reflektif Berbasis Bukti</strong>.</p>
+              <p class="rf-answer">Prinsip perencanaan <strong>SMART</strong> (<em>Specific, Measurable, Achievable, Relevant, Time-bound</em>), manajemen risiko pemangku kepentingan (<em>stakeholder management</em>), serta evaluasi dampak sosial berkelanjutan.</p>
+            </div>
+          </div>
+
+          <!-- 04 CHANGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">04</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-arrow-right-arrow-left rf-icon"></i> CHANGE</h4>
+              <h5>Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</h5>
+              <p class="rf-answer">Membiasakan diri memulai inisiatif pendidikan dengan mengidentifikasi kebutuhan dan persoalan nyata di lapangan (<em>needs assessment</em>) sebelum merumuskan bentuk program kerja.</p>
+              <p class="rf-answer">Mengembangkan komunikasi persuasif dan kepemimpinan yang melayani (<em>servant leadership</em>) dalam setiap kerja tim pendidikan di sekolah maupun masyarakat.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artefak Pembelajaran -->
+        <div class="artifacts-grid reveal reveal-up">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Artefak Pembelajaran &amp; Analisis Pemilihan</h3>
+          <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 0.95rem">
+            Berikut adalah artefak pembelajaran yang diidentifikasi dan penjelasan kritis mengenai alasan pemilihan artefak sebagai bukti pendukung refleksi belajar:
+          </p>
+          <div class="artifact-cards">
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">01</span>
+              <div class="artifact-icon"><i class="fa-solid fa-file-contract"></i></div>
+              <h4>Proposal Projek Kepemimpinan</h4>
+              <p>Rancangan inisiatif sosial komunitas berbasis pemetaan kebutuhan dan analisis SMART.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">02</span>
+              <div class="artifact-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+              <h4>Laporan Akhir Projek Komunitas B3</h4>
+              <p>Dokumen pertanggungjawaban lengkap pelaksanaan projek, rekapitulasi data lapangan, dan evaluasi dampak.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">03</span>
+              <div class="artifact-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4>Instrumen Evaluasi Dampak Sosial</h4>
+              <p>Kuesioner dan data kepuasan peserta sasaran serta rekomendasi keberlanjutan program.</p>
+            </div>
+          </div>
+
+          <div class="artifact-meaning reveal reveal-up" style="margin-top: 30px">
+            <h4><i class="fa-solid fa-circle-question"></i> Mengapa Artefak Tersebut yang Saya Pilih?</h4>
+            <p>Saya memilih 'Laporan Akhir Projek Kepemimpinan B3' karena artefak ini paling komprehensif mendukung konsep kepemimpinan reflektif berbasis bukti, menyajikan seluruh alur dari perumusan visi, tata kelola tim, mitigasi risiko, hingga evaluasi keberhasilan.</p>
+
+            <h4 style="margin-top: 25px;"><i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i> Bagian Mana dari Artefak Ini yang Mendukung Hasil Refleksi?</h4>
+            <p>Bagian yang paling mendukung refleksi adalah uraian analisis tantangan lapangan dan cara tim menyesuaikan strategi kerja untuk memastikan program tetap berjalan sukses dan berdaya guna bagi masyarakat sasaran.</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://drive.google.com/file/d/16wpD7dQNZLqPFPr2u8857ZJrXuvyfrbq/view?usp=sharing" target="_blank" class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; text-decoration: none;">
+                <i class="fa-brands fa-google-drive" style="color: #4285F4; font-size: 1.1rem;"></i> Lihat Artefak di Google Drive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- MK 05: Literasi Antikorupsi Berbasis Profil Pelajar Pancasila dalam Perspektif Islam -->
+      <!-- ============================================================ -->
+      <div class="reflection-panel" id="panel-mk05">
+        <div class="panel-header reveal reveal-up">
+          <div class="panel-meta">
+            <span class="panel-code">Mata Kuliah 05</span>
+            <span class="panel-status done"><i class="fa-solid fa-check"></i> Sudah Direfleksikan</span>
+          </div>
+          <h2>Literasi Antikorupsi Berbasis Profil Pelajar Pancasila dalam Perspektif Islam</h2>
+          <p class="panel-desc">Menginternalisasi nilai-nilai integritas, kejujuran, keadilan, dan amanah melalui analisis studi kasus moral kontekstual sebagai fondasi guru Pendidikan Pancasila berwawasan Islam.</p>
+        </div>
+
+        <!-- Dokumen Pendukung (LK 2) -->
+        <div class="panel-documents reveal reveal-up">
+          <h4><i class="fa-solid fa-paperclip"></i> Dokumen Resmi Lembar Kerja 2 (LK 2)</h4>
+          <div class="doc-list">
+            <div class="doc-item-wrapper">
+              <div class="doc-header">
+                <div class="doc-item" style="cursor: default">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Lembar Kerja 2 - Literasi Antikorupsi dalam Perspektif Islam</span>
+                </div>
+                <a href="document/Sem2/Seminar Refleksi_Literasi Antikorupsi_Wahyu Surya Al Fikri (1).pdf" target="_blank" class="doc-open-btn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Dokumen di Tab Baru
+                </a>
+              </div>
+              <div class="pdf-preview">
+                <iframe src="document/Sem2/Seminar Refleksi_Literasi Antikorupsi_Wahyu Surya Al Fikri (1).pdf" width="100%" height="520px" style="border: none; border-radius: 12px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reflection Flow (4C: Connection, Challenge, Concept, Change) -->
+        <div class="reflection-flow">
+          <!-- 01 CONNECTION -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">01</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-link rf-icon"></i> CONNECTION</h4>
+              <h5>Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</h5>
+              <p class="rf-answer"><strong>Topik 1 Pemahaman Nilai Moral dalam Pembelajaran Mendalam:</strong> Guru Pendidikan Pancasila bukan sekadar penyampai materi teori ketatanegaraan, melainkan fondasi benteng integritas yang menanamkan kejujuran, keadilan, tanggung jawab, dan amanah.</p>
+              <p class="rf-answer"><strong>Topik 2 Analisis Studi Kasus Pelanggaran Integritas Pendidikan:</strong> Mengkaji contoh konkret penyimpangan nyata seperti manipulasi dana BOS, markup pembangunan sekolah, titipan penerimaan siswa baru, gratifikasi nilai, dan penyalahgunaan dana.</p>
+              <p class="rf-answer"><strong>Topik 3 Sinergi Profil Pelajar Pancasila & Nilai Islam:</strong> Memperdalam nilai Beriman, Bertakwa, Berakhlak Mulia, dan Bernalar Kritis yang berpadu dengan prinsip amanah dan pencegahan kezaliman dalam perspektif Islam.</p>
+            </div>
+          </div>
+
+          <!-- 02 CHALLENGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">02</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-triangle-exclamation rf-icon"></i> CHALLENGE</h4>
+              <h5>Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</h5>
+              <p class="rf-answer">Sebelumnya, pendidikan antikorupsi cenderung dipahami sebatas hafalan pasal undang-undang, slogan formalitas, atau doktrin larangan tanpa mengajak siswa menganalisis akar masalah dan dilema moral yang sesungguhnya.</p>
+              <p class="rf-answer">Mata kuliah ini menyadarkan bahwa pendidikan antikorupsi harus berakar pada pembentukan nurani, penalaran moral kritis terhadap kasus kontekstual, serta keteladanan integritas tindakan guru dalam penilaian dan administrasi akademik.</p>
+            </div>
+          </div>
+
+          <!-- 03 CONCEPT -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">03</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-lightbulb rf-icon"></i> CONCEPT</h4>
+              <h5>Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</h5>
+              <p class="rf-answer">Integrasi <strong>Sembilan Nilai Integritas Antikorupsi</strong>: Jujur, Tanggung Jawab, Disiplin, Mandiri, Kerja Keras, Sederhana, Berani, Peduli, dan Adil.</p>
+              <p class="rf-answer">Prinsip <strong>Amanah dan Keadilan dalam Perspektif Islam</strong>, pendekatan <em>Case-Based Learning</em> dalam literasi moral, serta peran guru sebagai <em>Role Model</em> pencegahan korupsi di ekosistem sekolah.</p>
+            </div>
+          </div>
+
+          <!-- 04 CHANGE -->
+          <div class="rf-item reveal reveal-up">
+            <div class="rf-number">04</div>
+            <div class="rf-content">
+              <h4><i class="fa-solid fa-arrow-right-arrow-left rf-icon"></i> CHANGE</h4>
+              <h5>Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</h5>
+              <p class="rf-answer">Merancang pembelajaran Pendidikan Pancasila berbasis studi kasus etika dan dilema moral yang dekat dengan kehidupan siswa untuk mengasah nalar kritis dan sikap berani menolak kecurangan.</p>
+              <p class="rf-answer">Menjaga komitmen integritas pribadi secara konsisten dalam penilaian objektif, transparansi administrasi, penghargaan hak cipta akademik, dan keteladanan perilaku di sekolah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artefak Pembelajaran -->
+        <div class="artifacts-grid reveal reveal-up">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Artefak Pembelajaran &amp; Analisis Pemilihan</h3>
+          <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 0.95rem">
+            Berikut adalah artefak pembelajaran yang diidentifikasi dan penjelasan kritis mengenai alasan pemilihan artefak sebagai bukti pendukung refleksi belajar:
+          </p>
+          <div class="artifact-cards">
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">01</span>
+              <div class="artifact-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h4>Sintesis Nilai Moral & Studi Kasus</h4>
+              <p>Kajian komprehensif fondasi literasi antikorupsi, studi kasus pelanggaran dana BOS, dan peran guru Pancasila.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">02</span>
+              <div class="artifact-icon"><i class="fa-solid fa-newspaper"></i></div>
+              <h4>Produk Literasi Antikorupsi Siswa</h4>
+              <p>Desain lembar kerja analisis kasus dan produk infografis pencegahan gratifikasi dan kecurangan akademik.</p>
+            </div>
+            <div class="artifact-card hover-anim">
+              <span class="artifact-number">03</span>
+              <div class="artifact-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <h4>Pakta Integritas Kelas Pancasila</h4>
+              <p>Kesepakatan bersama budaya jujur, transparansi penilaian, dan komitmen anti-menyontek di kelas.</p>
+            </div>
+          </div>
+
+          <div class="artifact-meaning reveal reveal-up" style="margin-top: 30px">
+            <h4><i class="fa-solid fa-circle-question"></i> Mengapa Artefak Tersebut yang Saya Pilih?</h4>
+            <p>Saya memilih artefak 'Sintesis Topik 1 Fondasi Literasi Antikorupsi' karena artefak ini memuat pemahaman nilai moral secara lengkap, mulai dari pembelajaran mendalam antikorupsi, studi kasus kontekstual di dunia pendidikan, hingga peran strategis guru Pendidikan Pancasila sebagai agen penguatan integritas.</p>
+
+            <h4 style="margin-top: 25px;"><i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i> Bagian Mana dari Artefak Ini yang Mendukung Hasil Refleksi?</h4>
+            <p>Bagian yang paling mendukung refleksi adalah pembahasan studi kasus riil (seperti manipulasi dana BOS dan gratifikasi penilaian) disertai pertanyaan pemantik yang melatih nalar etis calon guru dalam membentengi ekosistem pendidikan dari bahaya korupsi.</p>
+
+            <div style="margin-top: 20px;">
+              <a href="https://drive.google.com/file/d/1KuxGr7RckT_rHK0Xcoy5n5BpTh2N_Y8r/view?usp=drive_link" target="_blank" class="btn-outline" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.9rem; text-decoration: none;">
+                <i class="fa-brands fa-google-drive" style="color: #4285F4; font-size: 1.1rem;"></i> Lihat Artefak di Google Drive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="kontak">
+      <div class="footer-content">
+        <h2>LET'S REFLECT &amp; GROW</h2>
+        <p style="color: #a3a3a3; margin-bottom: 30px">Setiap refleksi membawa kita selangkah lebih dekat menjadi pendidik yang lebih baik.</p>
+        <a href="#daftar-mk" class="btn-primary" style="display: inline-flex">Kembali ke Daftar MK <i class="fa-solid fa-arrow-up"></i></a>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="copyright">&copy; 2026 Wahyu Surya Al Fikri, S.Pd. Refleksi Semester 2 &bull; Universitas Ahmad Dahlan (UAD).</p>
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      // ---------- DARK MODE ----------
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeIcon = themeToggleBtn.querySelector("i");
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          themeIcon.classList.replace("fa-moon", "fa-sun");
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.classList.replace("fa-sun", "fa-moon");
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      // ---------- SWITCH PANEL REFLEKSI ----------
+      const mkCards = document.querySelectorAll(".mk-card");
+      const panels = document.querySelectorAll(".reflection-panel");
+
+      mkCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const target = card.getAttribute("data-target");
+
+          // ubah card active
+          mkCards.forEach((c) => c.classList.remove("active"));
+          card.classList.add("active");
+
+          // tampilkan panel
+          panels.forEach((p) => p.classList.remove("active"));
+          const targetPanel = document.getElementById("panel-" + target);
+          if (targetPanel) {
+            targetPanel.classList.add("active");
+          }
+
+          // scroll ke panel
+          document.getElementById("refleksi").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      // aktifkan card pertama secara default
+      if (mkCards.length > 0) {
+        mkCards[0].classList.add("active");
+      }
+
+      // ---------- SCROLL REVEAL ----------
+      const revealElements = document.querySelectorAll(".reveal");
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -30px 0px" }
+      );
+      revealElements.forEach((el) => revealObserver.observe(el));
+    </script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
