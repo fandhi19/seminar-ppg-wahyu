@@ -154,9 +154,26 @@ body.dark-mode .nav-logo-img {
 
 .btn-contact:hover {
   background-color: var(--accent, #f59e0b);
-  color: #ffffff;
+  color: #191919;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+}
+
+.btn-contact.active {
+  background-color: var(--accent, #f59e0b);
+  color: #191919;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+}
+
+body.dark-mode .btn-contact {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+body.dark-mode .btn-contact:hover,
+body.dark-mode .btn-contact.active {
+  background-color: var(--accent, #f59e0b);
+  color: #191919;
 }
 
 /* Hamburger toggle hidden on desktop */
